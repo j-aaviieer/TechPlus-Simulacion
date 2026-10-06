@@ -1,0 +1,86 @@
+/* ================================
+   RESET BÁSICO
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f5f5;
+}
+
+/* ================================
+   ELEMENTOS GENERALES
+================================ */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input {
+    font: inherit;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 20px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.logoLeft img{
+    width: 60px;
+    height: 70px;
+}
+.logoRight {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+.logoRight h1 span{
+    color: rgb(9, 93, 244);
+}
+.logoRight p{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.navbarLinks {
+    display: flex;
+    flex-direction: row;
+}
+.navbarLinks ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.navbarLinks ul li{
+    list-style: none;
+}
+.navbarLinks ul li a:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
